@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: purple;
+    animation: mymove 8s infinite alternate;
+}
+
+.content {
+   display: flex;
+   margin: 100px 50px 50px 50px;
+   font-family: sans-serif;
+}
+
+#area {
+    width: 500px;
+    margin-left: 300px;
+    font-size: 0;
+}
+
+.cell {
+    width: 150px;
+    height: 150px;
+    line-height: 100px;
+    text-align: center;
+    display: inline-block;
+    font-size: 50px;
+    border: 3px solid red;
+    cursor: pointer;
+    vertical-align: middle;
+    color: red;
+    padding: 10px;
+   
+}
+
+.cell:hover {
+    background-color: red;
+}
+
+
+@keyframes mymove {
+    from {background-color: white;}
+    to {background-color: black}
+  }
